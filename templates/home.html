@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lending | TEST</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/main.css')}}"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <section class="header__logo">LOGO</section>
+      <section class="header__menu">MENU</section>
+    </header>
+
+    <main class="main">
+      <!-- Main Image Slider -->
+      <section class="main__image mi">IMAGE 1920 x 480 [px]</section>
+
+      <!-- Main Quick Menu -->
+      <section class="main__quick mq">
+        <article>ICON</article>
+        <article>ICON</article>
+        <article>ICON</article>
+        <article>ICON</article>
+      </section>
+
+      <!-- Main Text 1 Area -->
+      <section class="main__text1 mt1">
+        <article>{{t}}</article>
+        <article>{{c}}</article>
+      </section>
+
+      <!-- Main Banner 1 Area -->
+      <section class="main__banner1 mb1">
+        <div>BANNER IMAGE</div>
+      </section>
+
+      <!-- Main Image Viewer -->
+      <section class="main__imageViewer mv">
+        <div class="mv__top">
+          <div style="background-image: url({{i}})">I M A G E</div>
+          <div>I M A G E</div>
+        </div>
+        <div class="mv__bottom">
+          <div>I M A G E</div>
+          <div>I M A G E</div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer"></footer>
+  </body>
+</html>
